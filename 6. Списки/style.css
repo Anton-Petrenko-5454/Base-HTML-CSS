@@ -1,0 +1,16 @@
+.hero-image {
+    width: 350px;
+}
+
+body {
+    background-image: url("images/background.png");
+}
+
+/*
+font-size       - размер текста
+list-style-type - стиль списка
+*/
+.list {
+    font-size: x-large;
+    list-style-type: upper-roman;
+}
