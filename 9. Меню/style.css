@@ -1,0 +1,43 @@
+/*
+    id определяются в css через #
+*/
+
+#main-menu {
+    /*
+        list-style-type - вид маркеров списка
+            none - маркеров нет
+    */
+    list-style-type: none;
+    /* Обнуление стандартных отступов */
+    padding: 0px;
+    margin: 0px;
+    /* Указывает элементу на то, чтобы он занял размеры
+       своего содержимого */
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#main-menu li {
+    /* Выстраивает элементы слева друг от друга.
+       Элемент автоматически становится inline-block*/
+    float: left;
+    border-right: 1px solid #5e5e5e;
+}
+
+#main-menu li a {
+    /* Убирает подчёркивания текста ссылки */
+    text-decoration: none;
+    display: block;
+    padding: 13px 15px;
+    color: white;
+}
+
+/* Псевдокласс hover - отвечает за наведение на элемент мыши
+   Наведение на элемент a мышкой */
+#main-menu li a:hover {
+    background-color: #111111;
+}
+
+.active {
+    background-color: #2a7f24;
+}
