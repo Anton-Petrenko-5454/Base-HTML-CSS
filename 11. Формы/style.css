@@ -1,0 +1,11 @@
+form {
+    width: 250px;
+}
+
+form > div {
+    margin-bottom: 15px;
+}
+
+.top-label {
+    display: block;
+}
