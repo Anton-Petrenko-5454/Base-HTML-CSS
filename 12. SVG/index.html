@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--
+    SVG - Scalable Vector Graphics
+    Способ создавать векторные графические объекты
+
+ -->
+<body>
+    <!--
+        Общие атрибуты:
+        x, y: расположение внутри объекта svg
+        stroke: граница
+        fill: заполнение
+        stroke-width: толщина границы
+
+        rect - изображает прямоугольник
+            rx, ry: скругление углов
+
+        circle - изображает окружность
+            cx, cy: расположение
+            r: радиус
+
+        ellipse - изображает эллипс
+            cx, cy: расположение
+            rx, ry: длины сторон
+
+        line - изображает линию
+            x1, y1, x2, y2: координаты линии
+
+        polygon - изображает полигон
+            points: набор координат точек (x,y x1,y1 ...)
+            fill-rule: правило заполнения
+                nonzero: TODO
+                evenodd: TODO
+
+        polyline - изображает ломаную
+
+        path - изображает сложные кривые
+            M = перенос пера в координату
+            L = перенос пера с рисованием линии
+            TODO:
+            H = horizontal lineto
+            V = vertical lineto
+            C = curveto
+            S = smooth curveto
+            Q = quadratic Bézier curve
+            T = smooth quadratic Bézier curveto
+            A = elliptical Arc
+            Z = closepath
+
+     -->
+    <svg class="svg-image" width="500" height="500">
+        <rect x="5" y="5" width="20" height="20" style="fill:#0000ff;stroke-width:3;stroke:#00ff99" />
+        <rect class="rect-1" x="25" y="25" rx="5" ry="5" height="80" style="fill:rgb(0,0,255);stroke-width:3;stroke:#00ff99" />
+        <!--
+            Альтернативное задание атрибутов
+            <circle cx="100" cy="100" r="30" style="stroke:blue;fill:#FF0000" />
+        -->
+        <circle cx="100" cy="100" r="30" stroke="blue" fill="#ff0000" />
+        <ellipse cx="150" cy="150" rx="20" ry="50" style="fill:#ddff03" />
+        <line x1="100" y1="150" x2="200" y2="200" stroke="black" stroke-width="3" />
+        <polygon points="50,210 40,300 80,270 120,280" style="stroke:#d63f35;stroke-width:2" />
+        <polygon points="300,10 240,198 390,78 210,78 360,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+        <polyline points="150,210 140,300 180,270 220,280" style="fill:none;stroke:black;stroke-width:2" />
+        <path d="" />
+        <text x="125" y="15" fill="blue">SVG format</text>
+    </svg>
+</body>
+</html>

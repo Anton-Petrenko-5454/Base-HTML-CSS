@@ -1,0 +1,11 @@
+.rect-1 {
+    width: 80px;
+}
+
+.svg-image {
+    border: 1px solid #5e5e5e;
+}
+
+circle:hover {
+    fill: #2a7f24;
+}
