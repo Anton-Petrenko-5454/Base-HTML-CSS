@@ -1,0 +1,60 @@
+.main {
+    width: 300px;
+    height: 400px;
+}
+.main div {
+    width: 200px;
+    height: 100px;
+}
+div {
+    border: 1px solid #4a50d6;
+    margin: 5px;
+}
+
+/*
+    Позиционирование
+    Свойство position
+    Значения:
+        relative - компонент смещается относительно своего обычного положения.
+        fixed    - абсолютное положение относительно области просмотра.
+        absolute - компонент смещается относительно своего позиционированного
+                   предка, либо если такого нет, то относительно документа.
+                   Элемент с абсолютной позицией удаляется из основного потока.
+        sticky   - компонент ведёт себя как relative, пока не наступит заданная позиция,
+                   после чего элемент останавливается на месте и ведёт себя, как fixed.
+    Связанные свойства:
+        top, left, right, bottom
+*/
+
+.div-1 {
+    position: relative;
+    left: 50px;
+}
+
+.div-2 {
+    position: absolute;
+    left: 50px;
+    background-color: #ddff03;
+}
+
+.adv {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    border: 3px solid #4a50d6;
+    background-color: #6576b4;
+}
+
+.window {
+    width: 300px;
+    height: 200px;
+    border: 3px solid #111111;
+    overflow: auto;
+}
+
+.title {
+    position: sticky;
+    top: 0;
+    background-color: #5f9a5b;
+}
