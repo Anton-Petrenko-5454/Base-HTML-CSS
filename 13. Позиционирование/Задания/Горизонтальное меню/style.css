@@ -1,0 +1,38 @@
+.menu li:hover .dropdown-menu
+{
+    display: block;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: black;
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+.dropdown-menu li{
+    border-bottom: 1px solid white;
+}
+
+#main-menu,dropdoqn-menu{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+#main-menu > li{
+    display: inline-block;
+    position: relative;
+
+}
+#main-menu li a{
+    text-decoration: none;
+    display: block;
+
+    padding: 13px 15px;
+    color: white;
+    border-right: 1px solid white;
+}
