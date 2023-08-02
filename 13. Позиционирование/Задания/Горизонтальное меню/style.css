@@ -1,38 +1,37 @@
-.menu li:hover .dropdown-menu
-{
+.menu li:hover .dropdown-menu {
     display: block;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
     display: none;
     background-color: black;
-    padding: 0px;
+    padding: 0;
     list-style-type: none;
-    margin: 0px;
 }
-.dropdown-menu li{
+
+.dropdown-menu li {
     border-bottom: 1px solid white;
 }
 
-#main-menu,dropdoqn-menu{
+#main-menu, dropdoqn-menu {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: black;
 }
-#main-menu > li{
+
+#main-menu > li {
     display: inline-block;
     position: relative;
-
 }
-#main-menu li a{
+
+#main-menu li a {
     text-decoration: none;
     display: block;
-
     padding: 13px 15px;
     color: white;
-    border-right: 1px solid white;
+    border-left: 1px solid white;
 }
