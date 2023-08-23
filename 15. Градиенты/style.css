@@ -1,0 +1,50 @@
+div {
+    width: 320px;
+    height: 320px;
+    border: 1px solid #5e5e5e;
+    margin: 10px;
+    float: left;
+}
+
+/*
+    Градиенты
+
+    linear-gradient(<направление>, <цвет 1> [<начало цвета> %], <цвет 2> [<начало цвета> %], ...) - линейный градиент
+    <направление> - to bottom (default), to right, to bottom right, ... также можно указывать градусы поворота <число>deg.
+
+    radial-gradient(<форма и позиция центра градиента>, <цвет 1> [<начало цвета> %], <цвет 2> [<начало цвета> %], ...) - круглый градиент
+    Форма и позиция центра градиента
+        circle, ellipse
+        at top, at center, at bottom, at left
+        x% y%
+        closest-side, farthest-side, closest-corner, farthest-corner
+
+    conic-gradient(<позиция центра>, <цвет 1> [<начало цвета> %], <цвет 2> [<начало цвета> %], ...) - конический градиент
+
+    repeating-radial-gradient(...), repeating-linear-gradient(...), repeating-conic-gradient(...) - градиенты с повторениями\
+        В повторяющихся градиентах обязательно должны быть известны размеры градиентов
+ */
+
+.linear-gradient {
+    background-image: linear-gradient(to left top, #0000ff 50%, #00ff99 100%);
+}
+
+.repeating-linear-gradient {
+    background-image: repeating-linear-gradient(-45deg, white, red, white 20px, blue 20px, blue 40px);
+}
+
+.radial-gradient {
+    background-image: radial-gradient(at 60% 10%, #12FFAA, #0000ff);
+}
+
+.repeating-radial-gradient {
+    background-image: repeating-radial-gradient(at 60% 10%, #12FFAA 18%, #0000ff 25%);
+}
+
+.conic-gradient {
+    background-image: conic-gradient(#12FFAA, #0000ff);
+}
+
+.repeating-conic-gradient {
+    background-image: repeating-conic-gradient(#12FFAA 10%, #0000ff 15%);
+}
