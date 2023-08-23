@@ -1,0 +1,114 @@
+h3:before {
+    content: '';
+    display: block;
+    border: 1px solid black;
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* text-transforn */
+.capitalize {
+    /* Каждое слово с большой буквы */
+    text-transform: capitalize;
+}
+
+.uppercase {
+     /* Преобразование в верхний регистр */
+    text-transform: uppercase;
+}
+
+.lowercase {
+     /* Преобразование в нижний регистр */
+    text-transform: lowercase;
+}
+
+/* text-align */
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* word-spacing */
+.word-space-10px {
+    word-spacing: 10px;
+}
+
+.word-space--10px {
+    word-spacing: -10px;
+}
+
+/* letter-spacing */
+.letter-space-10px {
+    letter-spacing: 10px;
+}
+
+.letter-space--2px {
+    letter-spacing: -2px;
+}
+
+/*vertical align*/
+.align-top {
+    vertical-align: text-top;
+}
+
+.align-super {
+    vertical-align: super;
+}
+
+/*
+    text-decoration:
+
+    text-decoration-line - местонахождения линии (над текстом, под текстом, зачёркнутая и пр.)
+    text-decoration-color - цвет линии
+    text-decoration-style - тип линии (двойная, волнистая и пр.)
+    text-decoration-thickness - толщина линии
+*/
+.text-decorate-1 {
+    text-decoration: underline red wavy 2px;
+}
+
+/**
+    word-break - свойство, отвечающее за разрывы слов во время переноса на другую строку.
+    text-indent - отступ первой строки текста
+
+    Шрифты
+    font
+        font-style:
+            Стиль начертания
+            italic - курсивный
+            oblique - наклонный
+        font-variant:
+            Устанавливает регистр начертания букв
+        font-weight:
+            Устанавливает жирность шрифта
+        font-size:
+            Измеряется в px, em, %
+            smaller - относительный размер, меньше, чем у родителя
+            larger - ...
+            xx-small - очень маленький
+            x-small, small, medium, large, x-large, xx-large
+        font-family: <шрифт 1>, <шрифт 2>, ...
+            Если указанный шрифт не установлен используется следующий и так далее
+            Значения семейств шрифта:
+            Serif - шрифты с засечками
+            Sans-serif - рубленые шрифты
+            Monospace - моноширинные шрифты
+            Cursive - рукописные шрифты
+            ...
+    font-stretch:
+        Степень сжатия шрифта
+        ultra-condensed - очень сжатый шрифт
+        extra-condensed, condensed, semi-condensed,
+        normal - обычный вид
+        semi-expanded - немного расширенный
+        expanded, extra-expanded, ultra-expanded
+
+
+ */
