@@ -1,0 +1,29 @@
+/*
+    Тень от блока
+    box-shadow: (<x-offset> <y-offset> <blur-radius> <stretch> <color>), (...);
+        x-offset - горизонтальное смещение тени (Положительное - вправо, Отрицательное - влево)
+        y-offset - вертикальное смещение тени (Положительное - вниз, Отрицательное - вверх)
+        blur-radius - радиус размытия
+        stretch - расстояние, на которое тень увеличивается (Положительное - расширение, Отрицательное - сжатие)
+        color - цвет тени
+     inset - изменяет тень блока с внешней на внутреннюю
+
+     Тень от текста
+     text-shadow - свойства те же самые, что и для блока
+*/
+
+body {
+    background-color: #d5d4d4;
+}
+
+div {
+    width: 320px;
+    height: 150px;
+    margin: 30px;
+    float: left;
+    background-color: aliceblue;
+}
+
+.shadow-1 {
+    box-shadow: 0 14px 20px #484848, 0 10px 10px #918c8c;
+}
