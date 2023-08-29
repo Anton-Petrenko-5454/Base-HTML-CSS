@@ -2,15 +2,21 @@
     Трансформации
 
 */
-
-.block-1 {
+div{
     width: 150px;
     height: 100px;
-    margin: 35px;
-    border: 1px solid #0000ff;
+    margin: 0 auto;
     transition: all 0.6s ease-in-out;
+
+}
+.block-1 {
+    background-color: rgba(102, 123, 116, 0.5);
+    display: inline-block;
 }
 
-.block-1:hover {
-    transform: translate(15px, 0);
+.block-2:hover {
+    transform: translate(30px, 0);
+}
+.block-2 {
+    background-color: rgba(9, 125, 241, 0.5);
 }
