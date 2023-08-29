@@ -1,22 +1,68 @@
 /*
     Трансформации
+        translate, translateX, translateY, translateZ, translate3d
+            сдвиг элемента
+        scale, scaleX, scaleY, scale3d
+            масштабирование элемента по ширине и/или высоте
+            0 .. 1 - уменьшение элемента
+            1 .. - увеличение элемента
+            отрицательные значения отражают элемент зеркально
+        rotate, rotate3d, rotateX, rotateY, rotateZ
+            поворот элемента
+            измеряется в deg может принимать отрицательные значения
+        skew, skewX, skewY
+            деформация сторон элементов относительно координатных осей
+            измеряется в deg
+        matrix, matrix3d
+            объединяет несколько трансформаций в одну функцию
+
+    transform-origin - координаты центра трансформации (Задаётся в координатах или положении)
+        x, y
+        center, bottom, left, right, top
+
+    transform-box - определение того, что является опорным блоком для трансформации
+        content-box - область содержимого элемента
+        border-box - область рамки элемента
+        fill-box - рамка, содержащая геометрическую форму элемента
+        stroke-box - рамка, содержащая геометрическую форму и обводку элемента
+        view-box - область просмотра на холсте
 
 */
-div{
+
+div {
     width: 150px;
     height: 100px;
     margin: 0 auto;
     transition: all 0.6s ease-in-out;
-
 }
-.block-1 {
+
+.wrapper {
     background-color: rgba(102, 123, 116, 0.5);
     display: inline-block;
+    margin: 40px;
 }
 
-.block-2:hover {
+.wrapper div {
+    background-color: rgba(9, 125, 241, 0.5);
+}
+
+.translate-block:hover {
     transform: translate(30px, 0);
 }
-.block-2 {
-    background-color: rgba(9, 125, 241, 0.5);
+
+.scale-block:hover {
+    transform: scale(1.5, 0.6);
+}
+
+.rotate-block:hover {
+    transform: rotate(90deg);
+    transform-origin: left;
+}
+
+.skew-block:hover {
+    transform: skew(50deg, 20deg);
+}
+
+.matrix-block:hover {
+    transform: matrix(1.5, 0.2, -1.6, 0.5, 1.1, 0.1);
 }
