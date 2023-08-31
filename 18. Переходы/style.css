@@ -1,0 +1,68 @@
+/*
+    transition
+    transition-delay
+        задержка эффекта
+    transition-duration
+        продолжительность эффекта
+    transition-property
+        свойства, которое изменяется
+    transition-timing-function
+        функция времени
+        http://roblaplaca.com/examples/bezierBuilder/
+*/
+
+.wrapper div {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: rgba(9, 125, 241, 0.5);
+    margin: 80px;
+}
+
+.wrapper:hover div{
+    transform: scale(2);
+}
+
+.box-1 {
+    transition: 0.2s;
+}
+
+.box-2 {
+    transition: 0.8s;
+}
+
+.box-3 {
+    transition: 1.1s;
+}
+
+.box-4 {
+    transition-delay: 0.2s;
+}
+
+.box-5 {
+    transition-delay: 0.8s;
+}
+
+.box-6 {
+    transition-delay: 1.1s;
+}
+
+/*
+    TODO: Реализовать подобие с сайта http://roblaplaca.com/examples/bezierBuilder/
+          при наведении происходит смещение блоков вправо, используя различные функции времени
+*/
+
+.box-7 {
+    transition: 0.8s;
+    transition-timing-function: ;
+}
+
+.box-8 {
+    transition: 0.8s;
+    transition-timing-function:
+}
+
+.box-9 {
+    transition: 0.8s;
+    transition-timing-function: ;
+}
