@@ -44,6 +44,9 @@ div {
 
 .wrapper div {
     background-color: rgba(9, 125, 241, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .translate-block:hover {
